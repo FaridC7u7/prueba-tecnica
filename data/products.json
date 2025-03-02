@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Tortees",
+        "description": "Deliciosos snacks de maíz crujiente con un toque de picante. Ideales para acompañar tus reuniones o disfrutar en cualquier momento. Su textura única y su sabor intenso los convierten en el favorito de los amantes de las frituras con carácter.",
+        "price": "S/ 2.30",
+        "image": "https://dojiw2m9tvv09.cloudfront.net/49572/product/X_fritor7626.jpg?95&time=1740951628"
+    },
+    {
+        "id": 2,
+        "name": "Papas Lays",
+        "description": "Clásicas papas fritas de corte fino, crujientes y llenas de sabor. Perfectas para picar en cualquier momento del día. Su equilibrio de sal y textura ligera hacen que cada bocado sea una experiencia deliciosa e irresistible.",
+        "price": "S/ 2.50",
+        "image": "https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_003842/tienda_003842_9db257445caa0bc846f76a2d41cd6d1ac5d57775_producto_large_85.png?not-from-cache-please"
+    },
+    {
+        "id": 3,
+        "name": "Chetos",
+        "description": "Crujientes y sabrosos, los Chetos son el snack perfecto para los que buscan explosiones de sabor. Con su característico queso intenso y textura aireada, son ideales para acompañar tus mejores momentos de entretenimiento o disfrutar en solitario.",
+        "price": "S/ 2.00",
+        "image": "https://mistiendas.com.co/1467-large_default/boliqueso-x20gr.jpg"
+    }
+]
