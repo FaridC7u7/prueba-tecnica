@@ -1,41 +1,59 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Catálogo de Productos Web
 
-## Getting Started
+## Tecnologías Utilizadas
 
-First, run the development server:
+- **Frontend:** Next.js (React) con TypeScript y Tailwind CSS.
+- **Estilos e Interactividad:** Tailwind CSS, react-toastify para notificaciones, react-icons para íconos.
+- **Generación de PDFs:** pdf-lib para crear archivos PDF dinámicos.
+- **Autenticación:** LocalStorage para simular el estado de sesión.
+- **API:** Rutas API de Next.js para manejar login, registro, descarga de PDF y almacenamiento de correos.
+- **Base de Datos:** Archivos JSON locales para simular usuarios, productos y emails.
 
+## Cómo Ejecutar la Aplicación Localmente
+
+1. **Clonar el repositorio:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/FaridC7u7/prueba-tecnica.git
+cd prueba-tecnica
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Instalar dependencias:**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Iniciar la aplicación:**
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Abrir en el navegador:**
+Visita [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Funcionalidades Implementadas
 
-To learn more about Next.js, take a look at the following resources:
+### Catálogo de Productos
+- Listado de productos con nombre, descripción e imagen.
+- **Visibilidad del precio:**
+  - **No autenticado:** “No muestra precio.”.
+  - **Autenticado:** Muestra el precio real del producto.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Autenticación (Login/Registro)
+- Formulario de registro e inicio de sesión.
+- Validación básica de usuarios con datos almacenados en un archivo JSON.
+- Estado de sesión simulado con LocalStorage.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Descarga de Ficha Técnica en PDF
+- **Usuario autenticado:** Descarga directa de la ficha técnica.
+- **Usuario no autenticado:** Aparece un modal para ingresar el correo. Al enviar el correo, se registra (simulado) y luego se habilita la descarga del PDF.
 
-## Deploy on Vercel
+### Detalles Técnicos
+- **Componentización:** Separación clara de componentes reutilizables (botones, inputs, tarjetas de producto).
+- **Páginas dinámicas:** Página de detalle del producto con ruta dinámica `/products/[id]`.
+- **Validaciones:** Verificación de datos en formularios y control de errores en la API.
+- **Diseño responsivo:** Adaptado para dispositivos móviles y pantallas grandes con Tailwind CSS.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# prueba-tecnica
-prueba técnica
->>>>>>> 0f928bb1a4b2896ae0c0159a495876c4739a4e26
+## Decisiones de Diseño e Implementación
+- **Simulación de base de datos:** Usar JSON local para simplificar la prueba y mantener la lógica clara.
+- **Generación de PDF en el servidor:** Manejar la generación del PDF en una API para mantener los datos seguros.
+- **UX Mejorada:** Notificaciones con toast, modales elegantes y mensajes claros para cada estado de usuario.
